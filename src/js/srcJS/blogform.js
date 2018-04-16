@@ -163,7 +163,7 @@ const testList = [
         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, est hic suscipit tempora veniam voluptates.',
         author: 'Stranger 2',
         imageUrl: 'https://reactjs.org/logo-og.png',
-    },
+    }, 
     // {
     //     id: Date.now()+3,
     //     date: dataNow.getTime(),
