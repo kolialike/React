@@ -89,10 +89,9 @@ export default class BlogForm extends Component {
     render() {
         return (
             <div className={'wrapper'}>
+
                 <h5>ADD POST TO THE REACT BLOG</h5>
                 <div className={"add-post-form"}>
-                    <input type="text" placeholder={'Search some post title'} value={this.state.search}
-                           onChange={this.SearchText} className={"search-input"}/>
                     <form action="#" onSubmit={this.AddBlog}>
                         <div className="input-wrap">
                             <input type="text" placeholder={'Post Title'} onChange={this.BlogTitle}
@@ -108,6 +107,8 @@ export default class BlogForm extends Component {
                                value={this.state.imageUrl} className={"image-ulr-input"} required/>
                         <input type="submit" className={"btn-add-post"} value={"Add Post"}/>
                     </form>
+                    <input type="text" placeholder={'Search some post title'} value={this.state.search}
+                           onChange={this.SearchText} className={"search-input"}/>
                 </div>
                 <BlogList blogList={this.state.blogList} onDelete={this.deleteItem}/>
             </div>
