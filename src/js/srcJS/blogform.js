@@ -74,9 +74,6 @@ export default class BlogForm extends Component {
             author: this.state.author,
             imageUrl: this.state.imageUrl,
         };
-        // this.setState({
-        //     blogList: [ ...this.state.blogList, itemConst],
-        // });
         this.state.blogList.push(itemConst);
         this.state.searchList = this.state.blogList;
         this.resetForm();
@@ -164,13 +161,5 @@ const testList = [
         text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, est hic suscipit tempora veniam voluptates.',
         author: 'Stranger 2',
         imageUrl: 'https://reactjs.org/logo-og.png',
-    }, 
-    // {
-    //     id: Date.now()+3,
-    //     date: dataNow.getTime(),
-    //     title: 'Lorem ipsum. 3',
-    //     text: 'Lorem ipsum dolor sit amet.',
-    //     author: 'Stranger 3',
-    //     imageUrl: 'https://reactjs.org/logo-og.png',
-    // },
+    },
 ];
